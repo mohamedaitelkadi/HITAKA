@@ -12,13 +12,28 @@
 <body>
     <header>
         <ul class="navbar">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="home.html" class="logo">HITAKA</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <a href="#" class="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <li><a class="nav" href="home.html">Home</a></li>
+          <li><a class="nav" href="about.html">About</a></li>
+          <li><a  href="home.html" class="logo">HITAKA</a></li>
+          <li><a class="nav" href="menu.html">Menu</a></li>
+          <li><a class="nav" href="contact.html">Contact</a></li>
         </ul>
       </header>
+      <div class="mobile-menu">
+        <i class="bi bi-x" id="colse"></i>
+        <ul class="mob-options">
+            
+            <li><a class="nav-mob" href="home.html">Home</a></li>
+            <li><a class="nav-mob" href="about.html">About</a></li>
+            <li><a class="nav-mob" href="menu.html">Menu</a></li>
+            <li><a class="nav-mob" href="contact.html">Contact</a></li>
+          </ul>
+      </div>
     <div class="all">
         <div class="container">
             <div class="description">
@@ -33,7 +48,10 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn">ORDER NOW</button>
+                    <form action="/menu.html" >
+                        <button class="btn">ORDER NOW</button>
+                    </form>
+                    
                 </div>
             </div>
             <div>
@@ -56,7 +74,9 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn">MORE INFOS</button>
+                    <form action="/about.html" >
+                        <button class="btn">MORE INFOS</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -66,18 +86,21 @@
             </div>
             <div class="pics">
                 <div class="row1">
-                    <img src="/img/img3.jpg" alt="">
-                    <img src="/img/img4.jpg" alt="">
-                    <img src="/img/img5.jpg" alt="">
+                    <img class="img" src="/img/img3.jpg" alt="">
+                    <img class="img" src="/img/img4.jpg" alt="">
+                    <img class="img5" src="/img/img5.jpg" alt="">
                 </div>
                 <div class="row2">
-                    <img src="/img/img6.jpg" alt="">
-                    <img src="/img/img7.jpg" alt="">
-                    <img src="/img/img8.jpg" alt="">
+                    <img class="img" src="/img/img6.jpg" alt="">
+                    <img class="img" src="/img/img7.jpg" alt="">
+                    <img class="img" src="/img/img8.jpg" alt="">
                 </div>
             </div>
             <div>
-                <button class="btn">ORDER NOW</button>
+                <form action="/menu.html" >
+                    <button class="btn">ORDER NOW</button>
+                </form>
+                
             </div>
         </div>
         <div class="container4">
@@ -85,7 +108,7 @@
                 <h2>Contact Us</h2>
             </div>
             <div class="infos">
-                <div><img src="/img/img9.jpg" class="image1"></div>
+                <div class="image1"><img src="/img/img9.jpg" ></div>
                 <div class="info-btn">
                     <div class="main-infos">
                         <div class="local">
@@ -101,9 +124,12 @@
                             <p>support@hitaka.com <br>Send us your query anytime!</p>
                         </div>
                     </div>
-                    <button class="btn">CONTACT US</button>
+                    <form action="/contact.html" >
+                        <button class="btn">CONTACT US</button>
+                    </form>
+                    
                 </div>
-                <div><img src="/img/img10.jpg" class="image2"></div>
+                <div class="image2"><img src="/img/img10.jpg" ></div>
                 
             </div>
         </div>
@@ -118,6 +144,7 @@
             <div class="copyright">copyright <i class="bi bi-c-circle"></i> 2022</div>
         </div>
     </div>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
 

@@ -12,23 +12,37 @@
 <body>
     <header>
         <ul class="navbar">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="home.html" class="logo">HITAKA</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <a href="#" class="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <li><a class="nav" href="home.html">Home</a></li>
+          <li><a class="nav" href="about.html">About</a></li>
+          <li><a  href="home.html" class="logo">HITAKA</a></li>
+          <li><a class="nav" href="menu.html">Menu</a></li>
+          <li><a class="nav" href="contact.html">Contact</a></li>
         </ul>
       </header>
     <div class="all">
         <section class="contact-us">
             <h2>Contact Us</h2>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <p>GET IN TOUCH</p>
                 <input type="text" class="name" placeholder="Full name">
                 <input type="number" class="number" placeholder="Phone number">
                 <input type="email" class="email" placeholder="email">
                 <textarea class="message" cols="30" rows="5" placeholder="Message"></textarea>
-                <button class="btn">SUBMIT</button>
+                <button class="btn" id="submitbtn">SUBMIT</button>
+            </div>
+            <div class="contact" id="submitted">
+                <p>KEEP IN TOUCH</p>
+                <i class="bi bi-check-lg"></i>
+                <p class="sent">MESSAGE SENT SECCUSSFULLY</p>
+                <!-- <button class="btn" id="return">RETURN TO HOME</button> -->
+                <form action="/home.html" >
+                    <button class="btn" id="return">RETURN TO HOME</button>
+                </form>
             </div>
         </section>
         
@@ -43,5 +57,7 @@
             <div class="copyright">copyright <i class="bi bi-c-circle"></i> 2022</div>
         </div>
     </div>
+    <script src="contactus.js"></script>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>

@@ -9,26 +9,47 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <title>HITAKA</title>
 </head>
-<body>
+<body class="body">
     <header>
         <ul class="navbar">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="home.html" class="logo">HITAKA</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <a href="#" class="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <li><a class="nav" href="home.html">Home</a></li>
+          <li><a class="nav" href="about.html">About</a></li>
+          <li><a  href="home.html" class="logo">HITAKA</a></li>
+          <li><a class="nav" href="menu.html">Menu</a></li>
+          <li><a class="nav" href="contact.html">Contact</a></li>
         </ul>
-    </header>
-    <div class="all">   
+      </header>
+    <div class="all">  
+            <div class="alert">
+                <p class="thanks">Thank you for your order</p>
+                <p class="totalmsg"></p>
+                <div>
+                    <button class="btnalert" id="valid">Valid</button>
+                    <button class="btnalert" id="cancel">Cancel</button>
+                </div>
+            </div> 
+        <div class="alert" id="validate">
+            
+                <p class="thanks">your order validate successfully</p>
+                <button class="btnalert" id="close">close</button>
+
+        </div>
+
+        <div class="pointless">
         <div class="menu-page">
                 <h2>Menu</h2>
             <section class="all-menu">
                 <div class="menu">
                     <div class="choice">
-                        <div class="all-choice">ALL</div>
-                        <div class="all-choice">SUSHI</div>
-                        <div class="all-choice">SOUP</div>
-                        <div class="all-choice">SALADS </div>
+                        <div class="all-choice" id="all">ALL</div>
+                        <div class="all-choice" id="sushi">SUSHI</div>
+                        <div class="all-choice" id="soup">SOUP</div>
+                        <div class="all-choice" id="salad">SALADS </div>
                     </div>
                     <div class="plats">
                         <div class="sushi">
@@ -36,18 +57,8 @@
                             <div class="plat-sushi">
                                 <div class="case1">
                                     <div class="plat1">
-                                         Dragon roll
-                                         <p>90dh</p>
-                                    </div>
-                                    
-                                    <div class="order">
-                                        ORDER NOW
-                                    </div>
-                                </div>
-                                <div class="case1">
-                                    <div class="plat1">
-                                        Dragon roll
-                                        <p>90dh</p>
+                                            <p class="name">Dragon roll 1</p>                                        
+                                            <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -55,8 +66,17 @@
                                 </div>
                                 <div class="case1">
                                     <div class="plat1">
-                                        Dragon roll
-                                        <p>90dh</p>
+                                        <p class="name">Dragon roll 2</p>
+                                        <p class="price">90dh</p>
+                                    </div>
+                                    <div class="order">
+                                        ORDER NOW
+                                    </div>
+                                </div>
+                                <div class="case1">
+                                    <div class="plat1">
+                                        <p class="name">Dragon roll 3</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -69,8 +89,8 @@
                             <div class="plat-sushi">
                                 <div class="case1">
                                     <div class="plat1">
-                                        Fish soup
-                                        <p>90dh</p>
+                                        <p class="name">Fish soup 1</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -78,8 +98,8 @@
                                 </div>
                                 <div class="case1">
                                     <div class="plat1">
-                                        Fish soup
-                                        <p>90dh</p>
+                                        <p class="name">Fish soup 2</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -87,8 +107,8 @@
                                 </div>
                                 <div class="case1">
                                     <div class="plat1">
-                                        Fish soup
-                                        <p>90dh</p>
+                                        <p class="name">Fish soup 3</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -101,8 +121,8 @@
                             <div class="plat-sushi">
                                 <div class="case1">
                                     <div class="plat1">
-                                        Tuna salad
-                                        <p>90dh</p>
+                                        <p class="name">Tuna salad 1</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -110,8 +130,8 @@
                                 </div>
                                 <div class="case1">
                                     <div class="plat1">
-                                        Tuna salad
-                                        <p>90dh</p>
+                                        <p class="name">Tuna salad 2</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -119,8 +139,8 @@
                                 </div>
                                 <div class="case1">
                                     <div class="plat1">
-                                        Tuna salad
-                                        <p>90dh</p>
+                                        <p class="name">Tuna salad 3</p>
+                                        <p class="price">90dh</p>
                                     </div>
                                     <div class="order">
                                         ORDER NOW
@@ -131,13 +151,32 @@
                         </div>
                     </div>
                     <div class="receipt">
-                        <div class="rec">
-                            Receipt
+                        <div class="commands">
+                            <div class="rec">
+                                Receipt
+                            </div>
+                            <!-- <div class="command">
+                                    <p class="name">Fish soup 2</p>
+                                    <p class="price">90dh</p> 
+                                <div class="q">
+                                    <p class="quantity">quantity :</p>
+                            
+                                    <input type="number" class="quantity-num" value="1">
+                                    
+                                </div>
+                                <hr class="commandline">
+                            </div> -->
+                            
+                            
                         </div>
                         <div class="total">
                             TOTAL :
+                            <p class="totalr"></p>
                         </div>
-                        <div class="order-rec">
+                        <div class="order-rec" id="calc">
+                            CALCULATE TOTAL
+                        </div>
+                        <div class="order-rec" id="orderr">
                             ORDER NOW
                         </div>
                     </div>
@@ -158,7 +197,11 @@
         <div class="copyright">
             copyright <i class="bi bi-c-circle"></i> 2022
         </div>
+        
     </div>
+</div>
+    <script src="filter.js"></script>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
 
