@@ -20,7 +20,6 @@ orderbutton.forEach(element => {
         <hr class="commandline">
     </div>`
 
-    // <button class="remove">Remove</button>
     
     
     pannier.insertAdjacentHTML("beforeend",h);
@@ -30,9 +29,7 @@ orderbutton.forEach(element => {
             element.addEventListener('click',()=>{
             // console.log(element.parentNode.remove());
             const div = element.parentElement;
-            div.remove();
-
-            
+            div.remove(); 
         })
     })
             })
@@ -40,7 +37,7 @@ orderbutton.forEach(element => {
         let total;
         let calculate = document.querySelector("#calc");
         calculate.addEventListener("click",function(){
-            let pannier = document.getElementsByClassName(".rec")[0];
+           
             let calculateArray = [];
             let command = document.querySelectorAll(".command");
             command.forEach(element=>{
@@ -56,8 +53,6 @@ orderbutton.forEach(element => {
             total = calculateArray.reduce( (pre,curr) => pre+curr);
             let totalr = document.querySelector(".totalr")
             totalr.innerHTML = total
-            
-            
 
         })
 
@@ -139,6 +134,7 @@ close.addEventListener("click",function(){
 })
 cancel.addEventListener("click",function(){
     alert.style.display="none";
+    pointless.style = "pointer-events: auto";
 })
 
 
